@@ -38,6 +38,7 @@ int main(int argc, char* argv[])
 		}
 		printBanner(cmdBuff);
 		//printf("%d", sumc);
+		free(cmdBuff);
 	}
 	else
 	{ 
