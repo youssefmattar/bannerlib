@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 {
 	//hConsole = GetStdHandle(STD_OUTPUT_HANDLE);   // this too :)
 	//SetConsoleTextAttribute(hConsole, 2);         // this too :)
-	if (argc > 1) 
+	if (argc > 1) //see if we have cmd arguments
 	{
 		int sumc = 0;
 		for (int i = 1; i < argc; i++)
@@ -40,7 +40,7 @@ int main(int argc, char* argv[])
 		//printf("%d", sumc);
 		free(cmdBuff);
 	}
-	else
+	else  //if we dont have cmd arguments this will printbanner youssef by default.
 	{ 
 		printBanner("youssef"); 
 	}
