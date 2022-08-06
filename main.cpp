@@ -1,9 +1,9 @@
 //This program and library is made by Youssef Mattar 2022
 
 #include"bannerLib.h"
-//#include <windows.h>	//you need to uncomment this line if you want color output
 #include <conio.h>
 #define MAX_Buff_SZ 51
+//#include <windows.h>	//you need to uncomment this line if you want color output
 //HANDLE  hConsole;    // this too :) 
 char* cmdBuff;
 
