@@ -2,10 +2,11 @@
 
 #include"bannerLib.h"
 //#include <windows.h>	//you need to uncomment this line if you want color output
-
+#define MAX_Buff_SZ 51
 //HANDLE  hConsole;    // this too :) 
 char* cmdBuff;
-char sBuff[51];
+
+
 
 int main(int argc, char* argv[])
 {
@@ -44,12 +45,17 @@ int main(int argc, char* argv[])
 	}
 	else  //if there are no args it will ask the user for input
 	{ 
+		char* sBuff = (char*)malloc(MAX_Buff_SZ);
+		if (sBuff == NULL) {
+			printf("No memory\n");
+			return 1;
+		}
 		printf("enter text you want to print max 50 characters\n");
 		fgets(sBuff, 50, stdin);
 		printBanner(sBuff); 
 	}
 	//SetConsoleTextAttribute(hConsole, 15);  //optional if you want to set the color white again
-	
+	return(0);
 }
 
 
