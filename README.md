@@ -2,7 +2,7 @@
 
 This C library output text banners for windows cmd or linux terminal or you can compile it any where you want.
 
-This lib now can output capital english letters (work in progress to add more letters)
+This lib now can output capital english letters only (work in progress to add more letters)
 
 This lib has two functions which are
 
