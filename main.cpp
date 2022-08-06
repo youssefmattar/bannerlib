@@ -5,12 +5,14 @@
 
 //HANDLE  hConsole;    // this too :) 
 char* cmdBuff;
+char sBuff[51];
 
 int main(int argc, char* argv[])
 {
 	//hConsole = GetStdHandle(STD_OUTPUT_HANDLE);   // this too :)
 	//SetConsoleTextAttribute(hConsole, 2);         // this too :)
-	if (argc > 1) //see if we have cmd arguments
+
+	if (argc > 1)  //check if there are any cmd args
 	{
 		int sumc = 0;
 		for (int i = 1; i < argc; i++)
@@ -40,11 +42,14 @@ int main(int argc, char* argv[])
 		//printf("%d", sumc);
 		free(cmdBuff);
 	}
-	else  //if we dont have cmd arguments this will printbanner youssef by default.
+	else  //if there are no args it will ask the user for input
 	{ 
-		printBanner("youssef"); 
+		printf("enter text you want to print max 50 characters\n");
+		fgets(sBuff, 50, stdin);
+		printBanner(sBuff); 
 	}
 	//SetConsoleTextAttribute(hConsole, 15);  //optional if you want to set the color white again
 	
 }
+
 
