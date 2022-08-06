@@ -8,7 +8,10 @@ This lib has two functions which are
 
 printmultiple(int count , char character) which prints multiple chars in one line.
 
-for example printmultiple(3, '=');
+for example: 
+
+printmultiple(3, '=');
+
 the output will be: === 
 
 The second function which is 
