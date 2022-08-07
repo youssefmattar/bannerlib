@@ -460,6 +460,7 @@ int printBanner(const char  text[])
 		sum += sp;
 		}
 	}
+	sum++;
 	//printf("%d",sum);
 
 	//buff = (char*)malloc(sizeof(text));
@@ -1133,7 +1134,7 @@ int printBanner(const char  text[])
 		}
 	}
 	
-	printmultiple(sum, '=');
+	printmultiple(sum-2, '=');
 	printf("%s\n", p1);
 	printf("%s\n", p2);
 	printf("%s\n", p3);
@@ -1142,7 +1143,7 @@ int printBanner(const char  text[])
 	printf("%s\n", p6);
 	printf("%s\n", p7);
 	printf("%s\n", p8);
-	printmultiple(sum, '=');
+	printmultiple(sum-2, '=');
 	
 
 
@@ -1302,6 +1303,7 @@ int printBanner(char*  text)
 			sum += sp;
 		}
 	}
+	sum++;
 	//printf("%d",sum);
 
 	//buff = (char*)malloc(sizeof(text));
@@ -1974,8 +1976,8 @@ int printBanner(char*  text)
 			}
 		}
 	}
-
-	printmultiple(sum, '=');
+	
+	printmultiple(sum-2, '=');
 	printf("%s\n", p1);
 	printf("%s\n", p2);
 	printf("%s\n", p3);
@@ -1984,22 +1986,22 @@ int printBanner(char*  text)
 	printf("%s\n", p6);
 	printf("%s\n", p7);
 	printf("%s\n", p8);
-	printmultiple(sum, '=');
+	printmultiple(sum-2, '=');
 
 
 
+	
 
 
-
-	free(p1);
-	free(p2);
-	free(p3);
-	free(p4);
-	free(p5);
-	free(p6);
-	free(p7);
-	free(p8);
-
+		free(p1);
+		free(p2);
+		free(p3);
+		free(p4);
+		free(p5);
+		free(p6);
+		free(p7);
+		free(p8);
+	
 	return(0);
 }
 
