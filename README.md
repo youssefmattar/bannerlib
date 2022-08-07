@@ -25,11 +25,12 @@ The second function which is
  
  for example 
  
- printBanner("hi");
+ printBanner("hello");
  
  will output something like this
  
-![example](https://user-images.githubusercontent.com/70612293/183226968-08d99fb8-b2b5-4475-853a-5ea7b5ad6c25.JPG)
+![hello](https://user-images.githubusercontent.com/70612293/183314065-04af78ea-87f8-40fb-a743-d564a5fd80cc.JPG)
+
 
 you can use cmd arguments too as the example in my programs main.
   
