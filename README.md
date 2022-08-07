@@ -4,6 +4,8 @@ This C library output text banners for windows cmd or linux terminal or you can 
 
 This lib now can output capital english letters only (work in progress to add more letters)
 
+unfortunately the library can only print in one line till now :)
+
 This lib has two functions which are
 
 printmultiple(int count , char character) which prints multiple chars in one line.
