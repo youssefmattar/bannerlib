@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 {
 	//hConsole = GetStdHandle(STD_OUTPUT_HANDLE);   // this too :)
 	//SetConsoleTextAttribute(hConsole, 2);         // this too :)
-	//printf("\nbannerlib  Copyright (C) 2022  Youssef Mattar\ngithub link: https://github.com/youssefmattar/\n\n");
+	printf("\nbannerlib  Copyright (C) 2022  Youssef Mattar\ngithub link: https://github.com/youssefmattar/\n\n");
 	if (argc > 1)  //check if there are any cmd args
 	{
 		int sumc = 0;
