@@ -22,22 +22,29 @@ int main(int argc, char* argv[])
 			sumc += strlen(argv[i]);
 			sumc++;
 		}
-		cmdBuff = (char*)malloc(sumc * sizeof(char));
-		int ii;
-		for (ii = 1; ii < argc; ii++)
+		cmdBuff = (char*)malloc(sumc+1 * sizeof(char));
+		int iii;
+		for (iii = 1; iii < argc; iii++)
 		{
-			if (ii == 1)
+			if (iii == 1)
 			{
-				strcpy(cmdBuff, argv[ii]);
+				strcpy(cmdBuff, argv[iii]);
 				
 				strcat(cmdBuff, " ");
 			}
+
+			else if (iii == argc-1)
+			{
+				strcat(cmdBuff, argv[iii]);
+			}
+
 			else
 			{
-				strcat(cmdBuff, argv[ii]);
+				strcat(cmdBuff, argv[iii]);
 				
 				strcat(cmdBuff, " ");
 			}
+			
 
 		}
 		printBanner(cmdBuff);
