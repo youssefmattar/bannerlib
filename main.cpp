@@ -23,38 +23,52 @@ int main(int argc, char* argv[])
 			sumc++;
 		}
 		cmdBuff = (char*)malloc(sumc+1 * sizeof(char));
-		int iii;
-		for (iii = 1; iii < argc; iii++)
+
+		if (argc == 2)
 		{
-			if (iii == 1)
-			{
-				strcpy(cmdBuff, argv[iii]);
-				
-				strcat(cmdBuff, " ");
-			}
-
-			else if (iii == argc-1)
-			{
-				strcat(cmdBuff, argv[iii]);
-			}
-
-			else
-			{
-				strcat(cmdBuff, argv[iii]);
-				
-				strcat(cmdBuff, " ");
-			}
-			
-
+			strcpy(cmdBuff, argv[1]);
 		}
-		printBanner(cmdBuff);
-		//printf("%d", sumc);
-		free(cmdBuff);
 
-		printf("\npress any key to exit\n");
-		getch();
-		return(0);
+
+		else 
+		{
+				int iii;
+				for (iii = 1; iii < argc; iii++)
+				{
+					if (iii == 1)
+					{
+						strcpy(cmdBuff, argv[iii]);
+
+						strcat(cmdBuff, " ");
+					}
+
+
+
+					else if (iii == argc - 1)
+					{
+						strcat(cmdBuff, argv[iii]);
+					}
+
+					else
+					{
+						strcat(cmdBuff, argv[iii]);
+
+						strcat(cmdBuff, " ");
+					}
+
+
+				}
+		}
+			printBanner(cmdBuff);
+			//printf("%d", sumc);
+			free(cmdBuff);
+
+			//printf("\npress any key to exit\n");
+			//getch();
+			return(0);
+		
 	}
+
 	else  //if there are no args it will ask the user for input
 	{ 
 		char* sBuff = (char*)malloc(MAX_Buff_SZ);
