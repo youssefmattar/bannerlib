@@ -1158,6 +1158,7 @@ int printBanner(const char  text[])
 	free(p6);
 	free(p7);
 	free(p8);
+	sum = 0;
 	
 	return(0);
 }
@@ -2001,7 +2002,7 @@ int printBanner(char*  text)
 		free(p6);
 		free(p7);
 		free(p8);
-	
+		sum = 0;
 	return(0);
 }
 
