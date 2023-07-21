@@ -30,6 +30,6 @@ The second function which is
 ![hello](https://user-images.githubusercontent.com/70612293/183314065-04af78ea-87f8-40fb-a743-d564a5fd80cc.JPG)
 
 
-you can use cmd arguments too as the example in my programs main.
+you can use cmd arguments too as the example in my programs main function.
   
   
