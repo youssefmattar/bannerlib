@@ -17,8 +17,6 @@ printmultiple(3, '=');
 the output will be: === 
 
 The second function which is 
-  printBanner(const char text[]);
-  or
   printBanner(char* text);
   
  you can choose what you want according to your needs;
