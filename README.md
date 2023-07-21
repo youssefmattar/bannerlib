@@ -23,7 +23,7 @@ The second function which is
  
  for example 
  
- printBanner("hello");
+ printBanner((char*)"hello");
  
  will output something like this
  
